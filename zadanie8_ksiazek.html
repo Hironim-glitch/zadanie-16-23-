@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Igor Ksiazek 16.03.25 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        textarea {
+            width: 40%;
+            height: 175px;
+            font-family: monospace;
+            background: #f4f4f4;
+            border: 1px solid #999;
+            padding: 5px;
+            resize: none;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><u>Wewnętrzny arkusz stylów</u> </h1>
+    <ol>
+        <li><h1><b>Gdzie umieszczany jest wewnętrzny arkusz stylów?</b></h1>
+            <font face="arial"> Wewnętrzny arkusz stylów znajduje się zawsze w sekcji nagłówka dokumentu HTML. </font>
+        </li>
+
+        <li><h1><b>Jak wygląda teoretyczna składnia wewnętrznego arkusza stylów (z wcięciami)?</b></h1>
+            <font face="arial"><textarea> 
+<head> 
+(...) 
+<style type="text/css"> 
+/* <![CDATA[ */ 
+selektor1 { cecha: wartość; cecha2: wartość2... } 
+selektor2 { cecha: wartość; cecha2: wartość2... } 
+(...) 
+/* ]]> */ 
+</style> 
+(...) 
+</head> </textarea>
+            </font>
+        </li>
+
+        <li><h1><b>Jakie mogą być selektory w CSS?</b></h1>
+            <font face="arial"> W CSS selektory mogą obejmować tagi HTML, identyfikatory (np. #id), pseudo-klasy (np. :hover) oraz selektory atrybutów. </font>
+        </li>
+
+        <li><h1><b>Jakie cechy i wartości możemy stosować w CSS?</b></h1>
+            <font face="arial"> Cechy mogą obejmować m.in. kolor, rozmiar i typ czcionki, marginesy, obramowanie i inne właściwości. </font>
+        </li>
+        
+    </ol>
+
+</body>
+</html>

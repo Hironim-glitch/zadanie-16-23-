@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Igor Ksiazek 16.03.25 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        ol li {
+            font-weight: bold; /* Pogrubienie numerków listy */
+        }
+    </style>
+</head>
+<body>
+
+    <h1><u>Opis styl lokalny, liniowy, linijkowy.</u> </h1>
+    <ol>
+        <li><h1><b>Na co pozwala styl lokalny, który element będzie formatowany z jego pomocą?</b></h1>
+            <font face="arial"> Styl lokalny umożliwia zastosowanie formatowania do pojedynczego elementu na stronie, a jego użycie zależy od wybranego selektora. </font>
+        </li>
+        <li><h1><b>Jak wygląda składnia teoretyczna stylu lokalnego (np. z użyciem ramki otaczającej)?</b></h1>
+            <font face="arial"> Składnia stylu lokalnego może obejmować np. tabelę o jednej komórce, w której używamy znaków specjalnych, by wyświetlić definicję stylu bez jego zastosowania. Przykładem takiego "znaku specjalnego" jest &nbsp;, który reprezentuje spację niełamana. </font>
+        </li>
+        <li><h1><b>Co to jest selektor?</b></h1>
+            <font face="arial"> Selektor w CSS to element HTML, który jest wybierany do zastosowania określonych stylów, np. <code>p</code> (akapit), <code>h1</code> (nagłówek), <code>td</code> (komórka tabeli) i inne. </font>
+        </li>
+        <li><h1><b>Co wpisujemy jako "cechę" i jakie jest znaczenie średników?</b></h1>
+            <font face="arial"> Cechą w CSS jest konkretny atrybut, który chcemy sformatować, np. kolor tekstu (color). Średnik służy do oddzielania różnych cech selektora. </font>
+        </li>
+        <li><h1><b>Co wpisujemy jako "wartość" w deklaracji stylu?</b></h1>
+            <font face="arial"> Wartość to dokładny parametr przypisany do cechy, np. dla koloru tekstu może to być "red", "blue" lub wartość szesnastkowa jak "#31F4A5". Wartość zależy od cechy, której dotyczy. </font>
+        </li>
+    </ol>
+
+</body>
+</html>

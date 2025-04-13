@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Igor Ksiazek 16.03.25 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis stylu zewnętrznego.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border: 2px solid #333;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        td {
+            padding: 20px;
+            text-align: left;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <h1><li>Składnia teoretyczna CSS</h1>
+
+    <table>
+        <tr>
+            <td>
+                <strong>Przykład składni CSS:</strong>
+                <pre>
+&lt;style&gt;
+   
+    body {
+        background-color: #f0f0f0; 
+        font-family: Arial, sans-serif;
+    }
+    p {
+        color: blue; 
+        font-size: 16px; 
+    }
+    h1 {
+        color: green; 
+        text-align: center;
+    }
+&lt;/style&gt;
+                </pre>
+            </td>
+        </tr>
+    </table>
+</li>
+
+<h1><li>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</h1>
+<font face="arial">Styl zewnętrzny jest umieszczany w sekcji &lt;head&gt; dokumentu HTML, a tag &lt;link&gt; jest odpowiedzialny za jego podłączenie. Można dodać tyle linków, ile potrzeba.</font></li>
+
+<h1><li>Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może być tabela jedno komórkowa)?</h1>
+<font face="arial"><textarea cols="100" readonly>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</textarea></font></li>
+
+<h1><li>Ile arkuszy stylów może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</h1>
+<font face="arial">Można dołączyć dowolną liczbę arkuszy stylów. Ważne jest, by każdemu arkuszowi przypisać oddzielny tag &lt;link&gt;.</font></li>
+
+<h1><li>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style są definiowane w różnych arkuszach stylów podłączonych do tego samego dokumentu.</h1>
+<font face="arial">W przypadku konfliktów, gdy style są zdefiniowane w różnych arkuszach, zastosowanie mają zasady kaskadowości. Ostatnia deklaracja w kodzie ma priorytet.</font></li>
+
+<h1><li>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+<font face="arial">Pliki arkuszy są tworzone w prostym edytorze tekstowym, gdzie wpisuje się odpowiednią składnię CSS, a plik zapisuje z rozszerzeniem .css.</font></li>
+
+<h1><li>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+<font face="arial">Specjalistyczny edytor CSS oferuje dodatkowe funkcje, takie jak podgląd na żywo i ułatwia proces tworzenia pliku. Plik zapisuje się automatycznie z rozszerzeniem .css.</font></li>
+
+<h1><li>Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem stylów?</h1>
+<font face="arial">Zewnętrzny arkusz stylów zawsze posiada rozszerzenie .css.</font></li>
+
+<h1><li>Jakie są zalety zewnętrznego arkusza stylów (dwie – z użyciem wyliczenia)?</h1>
+<font face="arial"><ol>
+    <li>Wszystkie strony w obrębie serwisu mogą korzystać z tych samych, wspólnych cech.</li>
+    <li>W przypadku zmiany np. czcionki na wszystkich stronach, wystarczy edytować tylko zewnętrzny arkusz stylów, co oszczędza czas w porównaniu do edytowania każdej strony osobno.</li>
+</ol></font></li>
+
+<h1><li>Uwagi na temat pisania w CSS.</h1>
+<font face="arial"><ol>
+    <li>Tag &lt;link&gt; należy umieścić wyłącznie w sekcji &lt;head&gt;.</li>
+    <li>Można dołączyć dowolną liczbę arkuszy stylów.</li>
+    <li>W przypadku konfliktów, później zadeklarowane style mają wyższy priorytet.</li>
+</ol></font></li>
+
+</body>
+</html>

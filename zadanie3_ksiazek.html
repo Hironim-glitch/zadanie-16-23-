@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9f9f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Formatowanie w HTML i CSS</h1>
+    </header>
+
+    <section>
+        <h2>Cechy modyfikowania formatowania w HTML oraz CSS</h2>
+        <table>
+            <tr>
+                <th>Cecha</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <td>Elastyczność</td>
+                <td>Ograniczona, każdą zmianę trzeba powtarzać</td>
+                <td>Można stosować style globalnie dla wielu elementów</td>
+            </tr>
+            <tr>
+                <td>Łatwość utrzymania</td>
+                <td>Trudne przy dużych stronach</td>
+                <td>Łatwiejsze zarządzanie stylem</td>
+            </tr>
+            <tr>
+                <td>Możliwość nadpisywania</td>
+                <td>Brak mechanizmu kaskadowego</td>
+                <td>Kaskadowość i dziedziczenie</td>
+            </tr>
+            <tr>
+                <td>Sposób stylizacji</td>
+                <td>Bezpośrednio w znacznikach (&lt;b&gt;, &lt;font&gt; itd.)</td>
+                <td>Wydzielone reguły (<code>color: red;</code>)</td>
+            </tr>
+            <tr>
+                <td>Separacja treści i stylu</td>
+                <td>Styl mieszany z treścią</td>
+                <td>Oddzielenie stylu od struktury</td>
+            </tr>
+            <tr>
+                <td>Zaawansowane efekty</td>
+                <td>Ograniczone</td>
+                <td>Animacje, gradienty, cienie</td>
+            </tr>
+        </table>
+
+        <h2>Nowe możliwości CSS w porównaniu z HTML</h2>
+        <ol>
+            <li>Kolory i tła – gradienty, przezroczystość, obrazy tła.</li>
+            <li>Układ strony – Flexbox i Grid Layout.</li>
+            <li>Lepsza kontrola nad czcionkami – <code>@font-face</code>.</li>
+            <li>Pseudo-klasy i pseudo-elementy – <code>:hover</code>, <code>::after</code>.</li>
+            <li>Responsywność – Media queries.</li>
+            <li>Animacje i przejścia – <code>@keyframes</code>, <code>transition</code>.</li>
+            <li>Efekty cieni i filtrów – <code>box-shadow</code>, <code>filter: blur()</code>.</li>
+        </ol>
+
+        <h2>Wady CSS</h2>
+        <ul>
+            <li>Brak pełnej kompatybilności między przeglądarkami.</li>
+            <li>Starsze wersje nie obsługują zmiennych CSS.</li>
+            <li>Zależność od silnika przeglądarki.</li>
+            <li>Złożoność kaskadowości – nadpisywanie stylów.</li>
+            <li>Brak pełnej kontroli nad wydrukiem.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
